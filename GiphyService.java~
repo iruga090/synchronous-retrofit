@@ -10,7 +10,7 @@ public class GiphyService {
 	private Service service;
 
 	public interface Service{
-		@GET("/v1/gifs/search")
+		@GET("/v1/gifs/search/")
 		GiphyResponse search(
 			@Query("api_key") String apiKey,
 			@Query("q") String query
